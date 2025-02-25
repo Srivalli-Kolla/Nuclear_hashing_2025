@@ -1,8 +1,12 @@
 #!/bin/bash
 
+# Initialize Conda
+source $HOME/miniconda3/etc/profile.d/conda.sh
+conda activate cellbender
+
 # Define base directories
-base_input_dir="/home/guest/srivalli/Github/Nuclear_hashing_2025/data"
-base_output_dir="/home/guest/srivalli/Github/Nuclear_hashing_2025/data/cellbender_processed_data"
+base_input_dir="/home/gruengroup/srivalli/Github/Nuclear_hashing_2025/data"
+base_output_dir="/home/gruengroup/srivalli/Github/Nuclear_hashing_2025/data/cellbender_processed_data"
 
 # Define the FPR values
 fpr_values=(0.01 0.03 0.05 0.07 0.1)
@@ -16,6 +20,7 @@ run_cellbender_full() {
     local output_dir="$base_output_dir/${fpr}_full/"
 
     mkdir -p "$output_dir"
+    cd "$output_dir"
     
     echo "Running full model for $input_file with FPR $fpr..."
 
