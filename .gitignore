@@ -177,4 +177,3 @@ zellij
 *.Robj
 *.csv
 *plots
-*.packaging
