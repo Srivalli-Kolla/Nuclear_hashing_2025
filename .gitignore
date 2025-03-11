@@ -174,3 +174,7 @@ cython_debug/
 *data
 zellij
 .pybiomart*
+*.Robj
+*.csv
+*plots
+*.packaging
