@@ -176,3 +176,7 @@ zellij
 .pybiomart*
 *.Robj
 *.csv
+*.RDataTmp*
+*.Rhistory
+*plots
+*.png
