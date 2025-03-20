@@ -180,3 +180,4 @@ zellij
 *.Rhistory
 *plots
 *.png
+*cache
